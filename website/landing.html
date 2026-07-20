@@ -7,6 +7,13 @@
    <title>you found me!</title>
 
    <style>
+        :root {
+            --color-base: #202122;
+            --color-progressive: #36c;
+            --color-progressive-hover: #3056a9;
+            --color-progressive-active: #233566;
+        }
+        
         body {
             width: 100%;
             height: 100%;
@@ -25,15 +32,20 @@
         }
 
         h1 {
-            color: rgb(0, 0, 0);
+            color: var(--color-base);
             font-size: clamp(2rem, 10vw, 5rem);
             margin-bottom: -1vh;
         }
-        
+
         p {
-            color: rgb(0, 0, 0);
             font-size: clamp(1rem, 5vw, 1.5rem);
         }
+
+        a,
+        a:link,a:visited{color: var(--color-progressive);}
+        a:hover {color: var(--color-progressive-hover);}
+        a:active {color: var(--color-progressive-active);}
+
     </style>
 
 </head>
