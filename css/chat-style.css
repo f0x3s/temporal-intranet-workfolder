@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 400px;
     height: 100dvh;
-    padding: 0 min(.5em, 10vh);
+    padding: min(.5em, 10vh) min(.5em, 10vh) 0;
     box-sizing: border-box;
     overflow-y: hidden;
     margin: 0 auto;
@@ -12,17 +12,21 @@
 
 #chat-log {
     flex: 4;
+    background-color: blanchedalmond;
 }
 
 #hr {
     text-align: center;
 }
 
-#textarea:focus {
+#username:focus,
+#message:focus {
     outline: none;
-    border: 2px ;
-    border-color: var(--color-progressive-active);
+    border: 2px solid;
+    border-color: var(--color-progressive-hover);
 }
+
+
 
 #user-input {
     flex: 2;
@@ -38,6 +42,8 @@
     box-sizing: border-box;
     resize: none;
     font: inherit;
+    border: 1px solid var(--color-base);
+    border-radius: 5px;
 }
 
 #username-area {
@@ -56,6 +62,8 @@
 
 #username {
     font: inherit;
+    border: 1px solid var(--color-base);
+    border-radius: 5px;
     min-width: 0;
 }
 
@@ -75,9 +83,9 @@
 #whatam {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    transform: translateX(-1em);
+    
 }
 
 #submit {
