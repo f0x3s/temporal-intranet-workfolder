@@ -54,6 +54,7 @@
 }
 
 #username {
+    font: inherit;
     min-width: 0;
 }
 
@@ -72,8 +73,11 @@
 }
 
 #whatam {
-    flex: none;
-    display: block;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-1em);
 }
 
 #submit {
