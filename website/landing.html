@@ -23,7 +23,7 @@
             font-family: "Times New Roman", Times, serif;
         }
 
-        div {
+        .container {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -44,9 +44,18 @@
         }
 
         a,
-        a:link,a:visited{color: var(--color-progressive);}
-        a:hover {color: var(--color-progressive-hover);}
-        a:active {color: var(--color-progressive-active);}
+        a:link,a:visited{
+            color: var(--color-progressive);
+            text-decoration: none;
+        }
+        a:hover {
+            color: var(--color-progressive-hover);
+            text-decoration: underline;
+        }
+        a:active {
+            color: var(--color-progressive-active);
+            text-decoration: underline;
+        }
 
     </style>
 
@@ -55,7 +64,7 @@
 <body>
 
    <main>
-        <div class="home-center-container">
+        <div class="container">
             <h1>you found me!</h1>
             <p><a href="chat.html" rel="next">[click to enter]</a></p>
         </div>
