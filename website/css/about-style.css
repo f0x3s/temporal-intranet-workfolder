@@ -1,174 +1,54 @@
-:root {
-            --color-base: #202122;
-            --color-progressive: #36c;
-            --color-progressive-hover: #3056a9;
-            --color-progressive-active: #233566;
-        }
+.container {
+    width: 100%;
+    max-width: 375px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
 
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            background-color: rgb(255, 255, 255);
-            font-family: "Times New Roman", Times, serif;
-        }
+.poetry {
+    flex: 3;                 
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
 
-        .container {
-            width: 100%;
-            max-width: 375px;
-            height: 100vh;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-        }
+.poetry > div {
+    display: flex;
+    font-size: clamp(18px, 5.5vw, 24px);
+}
 
-        .poetry {
-            flex: 3;                 
-            display: flex;
-            flex-direction: column;
-            margin: 1em;
-        }
+.poetry p {
+    white-space-collapse: preserve;
+    margin: 0.25em 0;
+    font-size: 1em;
+}
 
-        .poetry > div {
-            display: flex;
-            font-size: clamp(18px, 5.5vw, 24px);
-        }
+.nav-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 
-        .poetry p {
-            white-space-collapse: preserve;
-            margin: 0.25em 0;
-            font-size: 1em;
-        }
+    padding:  1em;
+}
 
-        #p1line1 {
-            flex: 1;
-            flex-direction: column;
-            justify-content: center;
-        }
+.page {
+    white-space-collapse: preserve;
+    text-align: center;
+    padding-top: 1em;
+}
 
-        #p1line2 {
-            flex: 1;
-            flex-direction: column;
-            justify-content: center;
-        }
+.page p {
+    margin: 0;
+}
 
-        #p1line3 {
-            flex: 2;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        #p1line4 {
-            flex: 1;
-            flex-direction: column;
-            justify-content: flex-end;
-            text-align: center;
-            padding-bottom: 1em;
-        }
-
-        #p2line1 {
-            flex: 1;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        #p2line2 {
-            flex: 1;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        #p2line3 {
-            flex: 1;
-            margin-right: 4em;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        #p2line4 {
-            flex: 1;
-            flex-direction: column;
-            justify-content: flex-start;
-            text-align: center;
-            padding-bottom: 1em;
-        }
-
-        #p3line1 {
-            flex: 1;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        #p3line2 {
-            flex: 1;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-
-        #p3line3 {
-            flex: .5;
-            margin-right: 2.5em;
-            flex-direction: column;
-            justify-content: flex-start;
-            font-weight: bold;
-        }
-
-        #p3line4 {
-            flex: 2;
-            flex-direction: column;
-            justify-content: flex-end;
-            text-align: center;
-            padding-bottom: 1em;
-        }
-
-        #p3line5 {
-            flex: 1;
-            flex-direction: column;
-            justify-content: flex-start;
-            text-align: center;
-            margin-right: 3em;
-
-        }
-
-       .nav-buttons {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-
-            padding:  1em;
-        }
-
-        .page {
-            white-space-collapse: preserve;
-            text-align: center;
-            padding-top: 1em;
-        }
-
-        .page p {
-            margin: 0;
-        }
-
-        .return {
-            margin-top: auto;
-            align-self: flex-start;
-            font-style:italic;
-            padding-bottom: 2em;
-        }
+.return {
+    margin-top: auto;
+    align-self: flex-start;
+    font-style:italic;
+    padding-bottom: 2em;
+}
 
 
-        a {
-            font-size: clamp(1rem, 5vw, 1.5rem);
-        }
-        a:link,a:visited{
-            color: var(--color-progressive);
-            text-decoration: none;
-        }
-        a:hover {
-            color: var(--color-progressive-hover);
-            text-decoration: underline;
-        }
-        a:active {
-            color: var(--color-progressive-active);
-            text-decoration: underline;
-        }
+
