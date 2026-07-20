@@ -17,6 +17,7 @@ body {
 a {
     font-size: clamp(1rem, 5vw, 1.5rem);
 }
+
 a:link,a:visited{
     color: var(--color-progressive);
     text-decoration: none;
