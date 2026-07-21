@@ -33,19 +33,21 @@
     display: none;
 }
 
+
+
+
 #end-message {
-    flex: none;
-    color: var(--color-option-purple);
-    font-style: italic;
     text-align: center;
-    margin: 0;
-    font-size: 1.5em;
+    color: #bf3c2c;
+    font-weight: bold;
+    font-size: 1rem;
 }
+
 
 .individual-chat {
     flex: none;
     font-size: 1.5em;
-
+    margin-top: .5em;
     display: flex;
     flex-direction: column;
 }
@@ -54,10 +56,26 @@
     margin-right: auto;
     margin-top: 1em;
     margin-bottom: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 0.35em;
+    margin: 0;
 }
 
+.chat-user,
+.chat-time {
+    white-space: nowrap;
+}
 .chat-name > span {
     font-weight: bold;
+}
+
+.chat-time {
+    font-size: 1rem;
+    color: var(--color-option-purple);
+    flex: 0 0 auto;
 }
 
 .chat-message {
@@ -96,7 +114,7 @@ textarea {
     flex: 4;
     min-height: 0;
     box-sizing: border-box;
-    font-size: 1.25em;
+    font-size: 1em;
     resize: none;
     border: 1px solid var(--color-base);
 }
@@ -120,7 +138,7 @@ textarea {
     min-width: 0;
     height: 1.5em;
     padding: 1px 2px;
-    font-size: 1.25em;
+    font-size: 1em;
     box-sizing: border-box;
 
     resize: none;
@@ -148,7 +166,7 @@ textarea {
 
 #whatam {
     flex: 1;
-
+    margin-left: 2em;
     display: flex;
     align-items: center;
     justify-content: flex-start;
