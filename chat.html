@@ -7,6 +7,7 @@
    <title>about</title>
    <link rel="stylesheet" href="css/master-styles.css">
    <link rel="stylesheet" href="css/chat-style.css">
+   
 </head>
 
 <body>
@@ -15,23 +16,48 @@
             <div id="chat-log">
                 <p>stuff</p>            
             </div>
-            <span id="hr">~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+            <span id="hr">~~~~~~~~~~~~~~~~~~~~~</span>
             <form id="user-input">
-                <textarea id ="message" required placeholder="your message here..." autocapitalize="off" autocorrect="off" autocomplete="off"></textarea>
+                <textarea
+                    id="message"
+                    required
+                    placeholder="your message here..."
+                    maxlength="512"
+                    autocapitalize="off"
+                    autocorrect="off"
+                    autocomplete="off"
+                ></textarea>
+
                 <div id="username-area">
                     <span>username:</span>
-                    <input type="text" id="username" autocomplete="off" autocapitalize="off" autocorrect="off" autocomplete="off">
+
+                    <textarea
+                        id="username"
+                        rows="1"
+                        wrap="off"
+                        maxlength="20"
+                        autocomplete="off"
+                        autocapitalize="off"
+                        autocorrect="off"
+                    ></textarea>
                 </div>
+
                 <p id="username-note">
                     (optional - leave blank to be assigned an anonymized name)
                 </p>
-                <div id="submit-area" >
+
+                <div id="submit-area">
                     <div id="whatam">
-                        <a href='about-1.html' ref="next">[<span style="font-style:italic;">what am I?</span>]</a>
+                        <a href="about-1.html" rel="next">
+                            [<span style="font-style: italic;">what am I?</span>]
+                        </a>
                     </div>
+
                     <input type="submit" id="submit" value="submit">
                 </div>
             </form>
         </div>
     </main>
+    <script src="js/newline-prevent-script.js"></script>
 </body>
+

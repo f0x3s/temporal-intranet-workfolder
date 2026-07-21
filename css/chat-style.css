@@ -8,29 +8,34 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-}
+    }
 
 #chat-log {
     flex: 4;
     background-color: blanchedalmond;
-}
+    }
 
 #hr {
     text-align: center;
-}
+    }
 
 #username:focus,
 #message:focus {
     outline: none;
     border: 2px solid;
     border-color: var(--color-progressive-hover);
-}
+    }
 
 #user-input {
     flex: 2;
     max-height: 275px;
     display: flex;
     flex-direction: column;
+    }
+
+textarea {
+    font: inherit;
+    border-radius: 5px;
 }
 
 #message {
@@ -38,10 +43,8 @@
     min-height: 0;
     box-sizing: border-box;
     resize: none;
-    font: inherit;
     border: 1px solid var(--color-base);
-    border-radius: 5px;
-}
+    }
 
 #username-area {
     margin-top: 8px;
@@ -49,33 +52,39 @@
     flex: 1;
     display: flex;
     align-items: center;
-}
+    }
 
 #username-area > span {
     flex: 1;
     text-align: right;
     margin-right: 0.25em;
-}
+    }
 
 #username {
-    font: inherit;
-    border: 1px solid var(--color-base);
-    border-radius: 5px;
     min-width: 0;
+    height: 1.5em;
+    padding: 1px 2px;
+    box-sizing: border-box;
+    
+    resize: none;
+    overflow: hidden;
+
+    line-height: normal;
+    white-space: nowrap;
 }
 
 #username-note {
     margin: 0.25em 0 0.75em;
     text-align: right;
     font-size: 0.8em;
-}
+    }
 
 #submit-area {
     flex: 1;
     padding-bottom: 1em;
     display: flex;
     align-items: center;
-}
+    }
 
 #whatam {
     flex: 1;
@@ -83,10 +92,10 @@
     justify-content: flex-start;
     align-items: center;
     
-}
+    }
 
 #submit {
     flex: none;
     width: 40%;
     font: inherit;
-}
+    }
