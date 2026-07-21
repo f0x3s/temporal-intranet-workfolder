@@ -26,14 +26,11 @@
     border-color: var(--color-progressive-hover);
 }
 
-
-
 #user-input {
     flex: 2;
     max-height: 275px;
     display: flex;
     flex-direction: column;
-    
 }
 
 #message {
