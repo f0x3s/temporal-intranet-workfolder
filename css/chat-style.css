@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: 100dvh;
     padding: min(.5em, 10vh) min(.5em, 10vh) 0;
     box-sizing: border-box;
@@ -8,11 +8,15 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    color: var(--color-base);
     }
 
 #chat-log {
     flex: 4;
-    background-color: blanchedalmond;
+    background-color: #d9dce0;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: var(--color-base);
     }
 
 #hr {
@@ -74,6 +78,7 @@ textarea {
 }
 
 #username-note {
+    font-weight: bold;
     margin: 0.25em 0 0.75em;
     text-align: right;
     font-size: 0.8em;
@@ -96,6 +101,6 @@ textarea {
 
 #submit {
     flex: none;
-    width: 40%;
+    width: max(100px, 25%);
     font: inherit;
     }
