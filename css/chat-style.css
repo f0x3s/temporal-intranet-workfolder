@@ -33,8 +33,17 @@
     display: none;
 }
 
+#end-message {
+    flex: none;
+    color: var(--color-option-purple);
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5em;
+}
+
 .individual-chat {
-    flex: 0 0 auto;
+    flex: none;
     font-size: 1.5em;
 
     display: flex;
@@ -50,8 +59,6 @@
 .chat-name > span {
     font-weight: bold;
 }
-
-
 
 .chat-message {
     margin-top: .25em;
@@ -81,6 +88,7 @@
 
 textarea {
     font: inherit;
+    
     border-radius: 5px;
 }
 
@@ -88,7 +96,7 @@ textarea {
     flex: 4;
     min-height: 0;
     box-sizing: border-box;
-
+    font-size: 1.25em;
     resize: none;
     border: 1px solid var(--color-base);
 }
@@ -96,7 +104,7 @@ textarea {
 #username-area {
     flex: 1;
     max-height: 20px;
-    margin-top: 8px;
+    margin-top: max(8px, .8em);
 
     display: flex;
     align-items: center;
@@ -112,17 +120,18 @@ textarea {
     min-width: 0;
     height: 1.5em;
     padding: 1px 2px;
+    font-size: 1.25em;
     box-sizing: border-box;
 
     resize: none;
     overflow: hidden;
-
+    
     line-height: normal;
     white-space: nowrap;
 }
 
 #username-note {
-    margin: 0.25em 0 0.75em;
+    margin: max(8px, .8em) 0 0.75em;
 
     font-size: 0.8em;
     font-weight: bold;
