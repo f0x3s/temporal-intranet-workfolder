@@ -2,40 +2,82 @@
     width: 100%;
     max-width: 500px;
     height: 100dvh;
-    padding: min(.5em, 10vh) min(.5em, 10vh) 0;
+    padding: 0.5em 0.5em 0;
     box-sizing: border-box;
     overflow-y: hidden;
     margin: 0 auto;
+
     display: flex;
     flex-direction: column;
+
     color: var(--color-base);
-    }
+}
 
 #chat-log {
     flex: 4;
+    min-height: 0;
+    overflow-y: auto;
+
     background-color: #d9dce0;
-    border: 1px solid;
+    border: 1px solid var(--color-base);
     border-radius: 5px;
-    border-color: var(--color-base);
-    }
+
+    padding: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.chatlog::-webkit-scrollbar {
+    display: none;
+}
+
+.individual-chat {
+    flex: 0 0 auto;
+    font-size: 1.5em;
+
+    display: flex;
+    flex-direction: column;
+}
+.chat-name {
+    width: fit-content;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.chat-name > span {
+    font-weight: bold;
+}
+
+
+
+.chat-message {
+    margin-top: .25em;
+    margin-bottom: 0;
+    width: fit-content;
+    margin-left: 1em;
+    text-align: left;
+}
 
 #hr {
     text-align: center;
-    }
+}
 
 #username:focus,
 #message:focus {
-    outline: none;
-    border: 2px solid;
-    border-color: var(--color-progressive-hover);
-    }
+    outline: 2px solid var(--color-progressive-hover);
+    outline-offset: -2px;
+}
 
 #user-input {
     flex: 2;
     max-height: 275px;
+
     display: flex;
     flex-direction: column;
-    }
+}
 
 textarea {
     font: inherit;
@@ -46,30 +88,32 @@ textarea {
     flex: 4;
     min-height: 0;
     box-sizing: border-box;
+
     resize: none;
     border: 1px solid var(--color-base);
-    }
+}
 
 #username-area {
-    margin-top: 8px;
-    max-height: 20px;
     flex: 1;
+    max-height: 20px;
+    margin-top: 8px;
+
     display: flex;
     align-items: center;
-    }
+}
 
 #username-area > span {
     flex: 1;
-    text-align: right;
     margin-right: 0.25em;
-    }
+    text-align: right;
+}
 
 #username {
     min-width: 0;
     height: 1.5em;
     padding: 1px 2px;
     box-sizing: border-box;
-    
+
     resize: none;
     overflow: hidden;
 
@@ -78,29 +122,31 @@ textarea {
 }
 
 #username-note {
-    font-weight: bold;
     margin: 0.25em 0 0.75em;
-    text-align: right;
+
     font-size: 0.8em;
-    }
+    font-weight: bold;
+    text-align: right;
+}
 
 #submit-area {
     flex: 1;
     padding-bottom: 1em;
+
     display: flex;
     align-items: center;
-    }
+}
 
 #whatam {
     flex: 1;
+
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    
-    }
+    justify-content: flex-start;
+}
 
 #submit {
     flex: none;
     width: max(100px, 25%);
     font: inherit;
-    }
+}
